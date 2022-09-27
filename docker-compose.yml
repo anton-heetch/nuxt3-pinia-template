@@ -6,7 +6,7 @@ services:
     container_name: rocketfront-hybrid
     ports:
       # change external port deneding on server side requirements
-      - 3000:3000
+      - 30022:3000
     build:
       context: .
       dockerfile: Dockerfile
