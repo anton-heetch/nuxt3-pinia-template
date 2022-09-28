@@ -17,4 +17,16 @@ export default defineNuxtConfig({
   css: ['~/assets/scss/main.scss'],
   buildModules: [],
   modules: ['@pinia/nuxt'],
+  app: {
+    head: {
+      title: '',
+      meta: [],
+      link: [],
+      style: [],
+      script: [],
+      noscript: [],
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=5',
+    },
+  },
 })
