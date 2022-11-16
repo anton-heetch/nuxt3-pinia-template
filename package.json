@@ -14,7 +14,8 @@
     "lint": "yarn lint:js && yarn lint:style",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",
@@ -27,6 +28,8 @@
     }
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
     "@pinia/nuxt": "^0.4.2",
     "@typescript-eslint/eslint-plugin": "5.6.0",
     "@typescript-eslint/parser": "5.6.0",
@@ -36,9 +39,11 @@
     "eslint-plugin-nuxt": "3.2.0",
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-vue": "9.3.0",
-    "husky": "^8.0.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
     "normalize.css": "^8.0.1",
-    "nuxt": "3.0.0-rc.11",
+    "nuxt": "^3.0.0-rc.14",
+    "pinia-plugin-persistedstate": "^2.4.0",
     "prettier": "2.7.1",
     "sass": "^1.55.0",
     "stylelint": "^14.12.1",
