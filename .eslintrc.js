@@ -1,11 +1,11 @@
 module.exports = {
-  root: true,
   env: {
     browser: true,
+    es2021: true,
     node: true,
   },
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 'lateset',
     sourceType: 'module',
     parser: '@typescript-eslint/parser',
   },
