@@ -23,7 +23,7 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "commit-msg": "npx --no-install commitlint --edit",
       "pre-commit": "lint-staged"
     }
   },
@@ -42,7 +42,7 @@
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
     "normalize.css": "^8.0.1",
-    "nuxt": "^3.0.0-rc.14",
+    "nuxt": "^3.0.0",
     "pinia-plugin-persistedstate": "^2.4.0",
     "prettier": "2.7.1",
     "sass": "^1.55.0",
