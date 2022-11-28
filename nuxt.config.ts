@@ -34,7 +34,9 @@ export default defineNuxtConfig({
       script: [],
       noscript: [],
       charset: 'utf-8',
-      viewport: 'width=device-width, initial-scale=5',
+      viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
     },
+    pageTransition: { name: 'page', mode: 'out-in' },
+    layoutTransition: { name: 'layout', mode: 'out-in' },
   },
 })
